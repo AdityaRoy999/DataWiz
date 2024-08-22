@@ -177,27 +177,27 @@ st.markdown(
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 6px 12px; /* Reduced padding */
-        font-size: 12px; /* Smaller font size */
+        padding: 4px 8px; /* Further reduced padding */
+        font-size: 10px; /* Smaller font size */
         font-weight: bold;
         color: #ffffff;
         background-color: #141414;
         border: none;
-        border-radius: 20px; /* Smaller rounded corners */
+        border-radius: 15px; /* Smaller rounded corners */
         text-decoration: none;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
     
     .button-like img {
-        width: 16px; /* Smaller logo size */
-        height: 16px;
-        margin-right: 6px; /* Reduced margin */
+        width: 12px; /* Smaller logo size */
+        height: 12px;
+        margin-right: 4px; /* Reduced margin */
         border-radius: 50%;
     }
     
     .button-like:hover {
-        transform: translateY(-3px); /* Smaller lift effect */
+        transform: translateY(-2px); /* Smaller lift effect */
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
     
@@ -206,7 +206,7 @@ st.markdown(
         bottom: 10px;
         left: 10px;
         display: flex;
-        gap: 10px;
+        gap: 8px; /* Smaller gap between buttons */
     }
     </style>
     <div class="footer">
