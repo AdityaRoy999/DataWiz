@@ -1,2 +1,5 @@
 matplotlib
 seaborn
+plotly
+pandas
+io
