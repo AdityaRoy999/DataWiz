@@ -210,10 +210,10 @@ st.markdown(
     }
     </style>
     <div class="footer">
-        <a class="button-like" href="https://github.com/aditya-profile" target="_blank">
+        <a class="button-like" href="https://github.com/AdityaRoy999" target="_blank">
             <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"> Made by Aditya
         </a>
-        <a class="button-like" href="https://github.com/uditya-profile" target="_blank">
+        <a class="button-like" href="https://github.com/udityamerit" target="_blank">
             <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"> Made by Uditya
         </a>
     </div>
