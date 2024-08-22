@@ -19,7 +19,13 @@ def generate_download_link(fig, filename="plot.png"):
     )
 
 # Title of the Streamlit app
-st.title('Comprehensive CSV Data Visualization App')
+st.set_page_config(
+    page_title='Comprehensive CSV Data Visualization App',
+    page_icon="📊",
+    layout="wide",
+    initial_sidebar_state="expanded",
+
+)
 
 # File uploader for CSV files
 uploaded_file = st.file_uploader('Upload your CSV file', type=['csv'])
