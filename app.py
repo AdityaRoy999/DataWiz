@@ -180,7 +180,7 @@ st.markdown(
     }
     .button-like {
         display: inline-block;
-        padding: 10px 20px;
+        padding: 5px 5px;
         font-size: 18px;  /* Font size */
         font-family: Arial, sans-serif;
         text-align: center;
