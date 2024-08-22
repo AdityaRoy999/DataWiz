@@ -172,36 +172,41 @@ if uploaded_file is not None:
 # Add "Made by Aditya and Uditya" section with GitHub logo in a button-like element with hover effect
 st.markdown(
     """
-    <style>
+        <style>
+    .button-like {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 12px; /* Reduced padding */
+        font-size: 12px; /* Smaller font size */
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #141414;
+        border: none;
+        border-radius: 20px; /* Smaller rounded corners */
+        text-decoration: none;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .button-like img {
+        width: 16px; /* Smaller logo size */
+        height: 16px;
+        margin-right: 6px; /* Reduced margin */
+        border-radius: 50%;
+    }
+    
+    .button-like:hover {
+        transform: translateY(-3px); /* Smaller lift effect */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    
     .footer {
         position: fixed;
         bottom: 10px;
         left: 10px;
-    }
-    .button-like {
-        display: inline-block;
-        padding: 5px 5px;
-        font-size: 18px;  /* Font size */
-        font-family: Arial, sans-serif;
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        background-color: #0C0404;  /* Button color */
-        border-radius: 25px;  /* Rounded corners */
-        cursor: pointer;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Shadow for 3D effect */
-        transition: transform 0.2s, box-shadow 0.2s;  /* Transition for hover effect */
-    }
-    .button-like:hover {
-        transform: translateY(-5px);  /* Lift effect on hover */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);  /* Deeper shadow on hover */
-    }
-    .button-like img {
-        width: 25px;  /* Logo size */
-        height: 25px;
-        border-radius: 50%;  /* Rounded logo */
-        vertical-align: middle;
-        margin-right: 10px;  /* Spacing between logo and text */
+        display: flex;
+        gap: 10px;
     }
     </style>
     <div class="footer">
