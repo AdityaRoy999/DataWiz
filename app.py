@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 import io
+from PIL import Image
 
 # Function to generate a download link for the plot
 def generate_download_link(fig, filename="plot.png"):
@@ -139,7 +140,6 @@ if uploaded_file is not None:
         st.subheader('Pair Plot')
         sns.pairplot(df_subset[numeric_columns])
         st.pyplot()
-        
 
     elif graph_type == 'Correlation Matrix':
         st.subheader('Correlation Matrix')
@@ -168,3 +168,50 @@ if uploaded_file is not None:
     # Show the DataFrame statistics in horizontal format
     st.subheader('Data Statistics')
     st.write(df_subset.describe().T)
+
+# Add "Made by Aditya and Uditya" section with GitHub logo in a button-like element with hover effect
+st.markdown(
+    """
+    <style>
+    .footer {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+    .button-like {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 18px;  /* Font size */
+        font-family: Arial, sans-serif;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: #0C0404;  /* Button color */
+        border-radius: 25px;  /* Rounded corners */
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Shadow for 3D effect */
+        transition: transform 0.2s, box-shadow 0.2s;  /* Transition for hover effect */
+    }
+    .button-like:hover {
+        transform: translateY(-5px);  /* Lift effect on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);  /* Deeper shadow on hover */
+    }
+    .button-like img {
+        width: 25px;  /* Logo size */
+        height: 25px;
+        border-radius: 50%;  /* Rounded logo */
+        vertical-align: middle;
+        margin-right: 10px;  /* Spacing between logo and text */
+    }
+    </style>
+    <div class="footer">
+        <a class="button-like" href="https://github.com/aditya-profile" target="_blank">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"> Made by Aditya
+        </a>
+        <a class="button-like" href="https://github.com/uditya-profile" target="_blank">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"> Made by Uditya
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
