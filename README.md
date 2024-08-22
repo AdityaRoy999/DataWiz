@@ -1,5 +1,5 @@
-# Comprehensive CSV Data Visualization App
-### Introducing DataWiz - Your go to Data Vizualizer.
+# Introducing DataWiz
+### Your go to Data Vizualizer.
 DataWiz provides a user-friendly interface to visualize data from CSV files. Users can upload a CSV file, choose different types of plots, and customize their data visualization experience.  profiles.
 
 ## Features
